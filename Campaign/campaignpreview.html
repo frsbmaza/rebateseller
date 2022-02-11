@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebate</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="/./assets/fonts/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/./assets/css/styles-buyer.css">
+    <link rel="stylesheet" type="text/css" href="/./assets/css/styles-buyeronly.css">
+    <link rel="stylesheet" type="text/css" href="/./assets/css/style-seller.css">
+</head>
+
+<body class="campaignsettings-activity">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light MobileOnly">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span>RebateKey</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse Mobile_only" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/meter.svg"> Activity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/heart.svg"> Favorites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/bell.svg"> Notification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/wallet.svg"> Wallet</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#"><img src="/./assets/img/noun-rebate-4172854.svg"> Rebates</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#"><img src="/./assets/img/noun-account-1400493.svg"> Ibrahim-€0</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="sigin">SIGN IN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-success" href="#" id="signup">SIGN UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light DeskOnly">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void(0);">
+                    <button class="nav_expand_button"><img src="/./assets/img/navtog.svg"><span>Categories</span></button>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse desktop_only">
+
+                    <form class="form-inline my-2 my-lg-0 hidden-vs">
+                        <select>
+							<option>All Category</option>
+							<option>Category one</option>
+							<option>Category one</option>
+							<option>Category one</option>
+							<option>Category one</option>
+						</select>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search deals..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/meter.svg"> FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/heart.svg"> Contact us</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="javascript:void(0);"><img src="/./assets/img/noun-account-1400493.svg"> Ibrahim-€0
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Account</a>
+                                    <a class="dropdown-item" href="#">Sign Out</a>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="categories-nav">
+                    <ul class="categories-navbar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/meter.svg"> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/meter.svg"> Activity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/heart.svg"> Favorites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/bell.svg"> Notification (5)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="/./assets/img/wallet.svg"> Wallet</a>
+                        </li>
+                        <li class="nav-item has-submenu">
+                            <a class="nav-link" href="#"><img src="/./assets/img/noun-rebate-4172854.svg"> Rebates</a>
+                            <div class="menu-notification">
+                                <p>
+                                    You have 5 rebates left for today
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main_content_wrapper">
+        <section class="data-item campaignsettings-data-item">
+            <div class="container">
+                <div class="campaign-progress-step">
+                    <div class="step-wrapper-flex">
+                        <div class="steps completed">
+                            <span class="stepnumber">1</span>
+                            <span class="stepname">
+                                Basic details
+                            </span>
+                        </div>
+                        <div class="steps completed">
+                            <span class="stepnumber">2</span>
+                            <span class="stepname">
+                                Settings
+                            </span>
+                        </div>
+                        <div class="steps  progressed current">
+                            <span class="stepnumber">3</span>
+                            <span class="stepname">
+                                Preview
+                            </span>
+                        </div>
+                        <div class="steps">
+                            <span class="stepnumber">4</span>
+                            <span class="stepname">
+                                cost overview
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 instruction-heading d-flex-row">
+                        <h1><img src="/./assets/img/campaigning.svg">Campaign #4324432</h1>
+
+                        <div class="heading-btn">
+                            <button class="btn btn-tp-nb"><img src="/./assets/img/polygon.svg">Watch Video Tutorial</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 campagain-settings-col-data preview-products">
+                        <div class="col-md-12 product-fav-col position-relative">
+                            <div class="row product-fav">
+                                <div class="col-md-3 col-five">
+                                    <div class="product-col-sidebar">
+                                        <div class="product-description-first">
+                                            <div class="proudct-thumb">
+                                                <a href="middle.html"><img src="/./assets/img/Mask Group 71.png"></a>
+                                            </div>
+                                            <button class="wishlist">
+                                            <i class="fa fa-heart-o"></i>
+                                        </button>
+                                            <button class="clock_icon">
+                                                <span class="tooltips">Only 3 days remaining</span>
+                                            <i class="fa fa-clock-o"></i>
+                                        </button>
+                                            <div class="main-description">
+                                                <h5><a href="middle.html"><del>€17.38</del> €2.38</a></h5>
+                                                <h4><a href="middle.html">Black Beaded Earing</a></h4>
+                                                <div class="product-category">
+                                                    <p>
+                                                        <a href="middle.html"><img src="/./assets/img/Icon ionic-md-folder-open.svg"> <span>Jwelery</span></a>
+                                                    </p>
+                                                    <p class="share_btn">
+                                                        <img src="/./assets/img/Icon feather-share-2.svg">
+                                                    </p>
+                                                </div>
+                                                <div class="product-disount">
+                                                    <h6><a href="middle.html">75% OFF</a></h6>
+                                                </div>
+                                                <div class="share_icon">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <i class="fa fa-twitter"></i>
+                                                    <i class="fa fa-pinterest"></i>
+                                                    <i class="fa fa-whatsapp"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-five">
+                                    <div class="product-col-sidebar">
+                                        <div class="product-description-first">
+                                            <div class="proudct-thumb">
+                                                <a href="middle.html"><img src="/./assets/img/Mask Group 71.png"></a>
+                                            </div>
+                                            <button class="wishlist">
+                                            <i class="fa fa-heart-o"></i>
+                                        </button>
+                                            <button class="clock_icon">
+                                                <span class="tooltips">Only 3 days remaining</span>
+                                            <i class="fa fa-clock-o"></i>
+                                        </button>
+                                            <div class="main-description">
+                                                <h5><a href="middle.html"><del>€17.38</del> €2.38</a></h5>
+                                                <h4><a href="middle.html">Black Beaded Earing</a></h4>
+                                                <div class="product-category">
+                                                    <p>
+                                                        <a href="middle.html"><img src="/./assets/img/Icon ionic-md-folder-open.svg"> <span>Jwelery</span></a>
+                                                    </p>
+                                                    <p class="share_btn">
+                                                        <img src="/./assets/img/Icon feather-share-2.svg">
+                                                    </p>
+                                                </div>
+                                                <div class="product-disount">
+                                                    <h6><a href="middle.html">75% OFF</a></h6>
+                                                </div>
+                                                <div class="share_icon">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <i class="fa fa-twitter"></i>
+                                                    <i class="fa fa-pinterest"></i>
+                                                    <i class="fa fa-whatsapp"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-five">
+                                    <div class="product-col-sidebar">
+                                        <div class="product-description-first">
+                                            <div class="proudct-thumb">
+                                                <a href="middle.html"><img src="/./assets/img/Mask Group 73.png"></a>
+                                            </div>
+                                            <button class="wishlist">
+                                            <i class="fa fa-heart-o"></i>
+                                        </button>
+                                            <button class="clock_icon">
+                                                <span class="tooltips">Only 3 days remaining</span>
+                                            <i class="fa fa-clock-o"></i>
+                                        </button>
+                                            <div class="main-description">
+                                                <h5><a href="middle.html"><del>€17.38</del> €2.38</a></h5>
+                                                <h4><a href="middle.html">Black Beaded Earing</a></h4>
+                                                <div class="product-category">
+                                                    <p>
+                                                        <a href="middle.html"><img src="/./assets/img/Icon ionic-md-folder-open.svg"> <span>Jwelery</span></a>
+                                                    </p>
+                                                    <p class="share_btn">
+                                                        <img src="/./assets/img/Icon feather-share-2.svg">
+                                                    </p>
+                                                </div>
+                                                <div class="product-disount">
+                                                    <h6><a href="middle.html">75% OFF</a></h6>
+                                                </div>
+                                                <div class="share_icon">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <i class="fa fa-twitter"></i>
+                                                    <i class="fa fa-pinterest"></i>
+                                                    <i class="fa fa-whatsapp"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-five">
+                                    <div class="product-col-sidebar">
+                                        <div class="product-description-first">
+                                            <div class="proudct-thumb">
+                                                <a href="middle.html"><img src="/./assets/img/Mask Group 74.png"></a>
+                                            </div>
+                                            <button class="wishlist">
+                                            <i class="fa fa-heart-o"></i>
+                                        </button>
+                                            <button class="clock_icon">
+                                                <span class="tooltips">Only 3 days remaining</span>
+                                            <i class="fa fa-clock-o"></i>
+                                        </button>
+                                            <div class="main-description">
+                                                <h5><a href="middle.html"><del>€17.38</del> €2.38</a></h5>
+                                                <h4><a href="middle.html">Black Beaded Earing</a></h4>
+                                                <div class="product-category">
+                                                    <p>
+                                                        <a href="middle.html"><img src="/./assets/img/Icon ionic-md-folder-open.svg"> <span>Jwelery</span></a>
+                                                    </p>
+                                                    <p class="share_btn">
+                                                        <img src="/./assets/img/Icon feather-share-2.svg">
+                                                    </p>
+                                                </div>
+                                                <div class="product-disount">
+                                                    <h6><a href="middle.html">75% OFF</a></h6>
+                                                </div>
+                                                <div class="share_icon">
+                                                    <i class="fa fa-facebook"></i>
+                                                    <i class="fa fa-twitter"></i>
+                                                    <i class="fa fa-pinterest"></i>
+                                                    <i class="fa fa-whatsapp"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-product-overlay-col">
+                                <div class="ppoc-content">
+                                    <h3>
+                                        This is how your campaign will looks like in live!
+                                    </h3>
+                                    <img src="/./assets/img/Group 11517.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-product-preview-content">
+                        <h3 class="prev_title">
+                            This is how your campaign User will see in details
+                        </h3>
+                        <div class="prev-pro-content">
+                            <div class="content-wrapper">
+                                <button class="close-popup"><img src="/./assets/img/Icon material-cancel.svg"></button>
+                                <div class="product-popup">
+                                    <div class="row product-popup-row">
+                                        <div class="col-md-4">
+                                            <div class="slider_style_two position-relative">
+                                                <button class="wishlist">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </button>
+                                                <div id="sync1" class="owl-carousel">
+                                                    <div class="item style2slide" data-hash="one">
+                                                        <div class="item-icon">
+                                                            <a href="/./assets/img/Mask Group 70.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                                        </div>
+                                                        <img src="/./assets/img/Mask Group 70.png" alt="image description" class="img-responsive">
+                                                    </div>
+                                                    <div class="item style2slide" data-hash="two">
+                                                        <div class="item-icon">
+                                                            <a href="/./assets/img/Mask Group 71.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                                        </div>
+                                                        <img src="/./assets/img/Mask Group 71.png" alt="image description" class="img-responsive">
+                                                    </div>
+                                                    <div class="item style2slide" data-hash="three">
+                                                        <div class="item-icon">
+                                                            <a href="/./assets/img/Mask Group 72.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                                        </div>
+                                                        <img src="/./assets/img/Mask Group 72.png" alt="image description" class="img-responsive">
+                                                    </div>
+                                                    <div class="item style2slide" data-hash="four">
+                                                        <div class="item-icon">
+                                                            <a href="/./assets/img/Mask Group 73.png" class="fancybox" rel="gallery1"><i class="fa fa-arrows-alt"></i></a>
+                                                        </div>
+                                                        <img src="/./assets/img/Mask Group 73.png" alt="image description" class="img-responsive">
+                                                    </div>
+                                                </div>
+                                                <div id="sync2" class="owl-carousel carousel_thumb">
+                                                    <div class="item" data-hash="one">
+                                                        <a href="#one">
+                                                            <img src="/./assets/img/Mask Group 70.png" alt="image description" class="img-responsive">
+                                                        </a>
+                                                    </div>
+                                                    <div class="item" data-hash="two">
+                                                        <a href="#two">
+                                                            <img src="/./assets/img/Mask Group 71.png" alt="image description" class="img-responsive">
+                                                        </a>
+                                                    </div>
+                                                    <div class="item" data-hash="three">
+                                                        <a href="#three">
+                                                            <img src="/./assets/img/Mask Group 72.png" alt="image description" class="img-responsive">
+                                                        </a>
+                                                    </div>
+                                                    <div class="item" data-hash="four">
+                                                        <a href="#four">
+                                                            <img src="/./assets/img/Mask Group 73.png" alt="image description" class="img-responsive">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="inner-page-left popup-product-left">
+                                                <div class="product-content-share">
+                                                    <p>
+                                                        Share via <span>
+                                                            <a href="#"><img src="/./assets/img/Icon awesome-facebook-f.svg"></a>
+                                                            <a href="#"><img src="/./assets/img/Icon awesome-facebook-messenger.svg"></a>
+                                                            <a href="#"><img src="/./assets/img/Icon awesome-twitter.svg"></a>
+                                                            <a href="#"><img src="/./assets/img/Icon awesome-link.svg"></a>
+                                                            <a href="#"><img src="/./assets/img/Icon ionic-ios-copy.svg"></a>
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <div class="product-discount">
+                                                    <h6>Rebate: 79%</h6>
+                                                </div>
+                                                <div class="product-heading">
+                                                    <h2>NeoHealth Lower Back Brace with Pulley System, Breathable Back Support Belt for Men and Women, ANY SIZE
+                                                    </h2>
+                                                </div>
+                                                <div class="main-description">
+                                                    <h5 class="price_single"><del>€17.38</del>€2.38</h5>
+                                                    <span class="save-badge"><img src="/./assets/img/save.svg"> You save €47.59</span>
+                                                </div>
+                                                <div class="row products-meta">
+                                                    <div class="col-md-7">
+                                                        <p>
+                                                            <img src="/./assets/img/Icon feather-shopping-cart.svg"> Only 18 items are available
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <p>
+                                                            <img src="/./assets/img/Icon feather-shopping-cart.svg"> Selling on <a href="#" class="vendor">Amazon</a> by <a href="#" class="provider">smangr</a>
+                                                        </p>
+                                                        <div class="d-flex">
+                                                            <p>
+                                                                <img src="/./assets/img/Icon ionic-md-eye.svg"> 15781 Views
+                                                            </p>
+                                                            <p>
+                                                                <img src="/./assets/img/Icon awesome-shopping-bag.svg">572 Sold
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="button-item">
+                                                    <button class="button-buy-product">
+                                                        buy this product
+                                                    </button>
+                                                    <button class="btn btn-border">PREVIEW</button>
+                                                </div>
+                                                <p class="expand-description">
+                                                    see product description
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 product-col" id="full-desctiption">
+                                            <div class="product-content-description">
+                                                <div class="product-description">
+                                                    <h3>Start Your Beard Growth Journey Today! </h3>
+                                                    <p>
+                                                        As technology greatly advances and the economic demand increases, parents and caregivers often rely on gadgets and devices to entertain and keep the little ones busy. Minimize your child’s exposure to certain gadgets and technology and maximize their
+                                                        outdoor experience. And what better way to do this but with Jungle Swings Sling Swing Set!
+                                                    </p>
+                                                    <p>
+                                                        - 【 GENTLE&PAINLESS&SAFE 】 The knife net facial hair removal for women fits your skin and gently strokes to trim hair without pulling, leaving the skin smooth without stubble, scratches or redness. the shaver for women blade is sharp and rounded low-friction
+                                                        protection heads prevents skin damage. Give you a refreshing experience and give back your baby-like skin.
+                                                    </p>
+                                                    <p>
+                                                        - 【 QUIET&RESPECT YOUR PRIVACY 】 Kaphio face shavers for women working sound is just like the sound when you turn a book, making you beautiful quietly. Don't be embarrassed and use it as you like. Release your sudden beauty.
+                                                    </p>
+                                                    <p>
+                                                        - 【EASY CLEANING 】 Women's shaving detachable blade head can be cleaned under running water, making clean up a breeze. There is also a small brush to assist in cleaning.
+                                                    </p>
+                                                </div>
+                                                <div class="product-description">
+                                                    <h3>Product Specifications:</h3>
+                                                    <p>
+                                                        - Material: Polymer<br> - Inclusions:<br> - 4 Straps <br> - 4 M8 Carabiners<br> - 2 Pack Sling Swing Seats<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <p class="expand-description" id="see_less">
+                                                see less product description
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-btn-wrapper">
+                        <button class="btn btn-orange">CONTINUE NEXT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="buyer-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-bottom-left">
+                        <p>Copyrights © Bobbooster.com 2021</p>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right">
+                    <div class="footer-bottom-right">
+                        <p class=" text-right">Terms of Use - Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js" integrity="sha512-5nBm8I4981vJDHhtHCaImHU+wcnmbheiFpmE03QLuYshaimnRk15jbW6sNK4/URdyqohIUQzNLsqdZ7bB3l5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="/./assets/js/index.js"></script>
+    <script>
+        $('#sync1').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 1,
+            dots: false,
+            URLhashListener: true
+        });
+
+        $('#sync2').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 4,
+            dots: false,
+            center: true,
+            stagePadding: 0,
+            URLhashListener: true,
+            responsive: {
+                // breakpoint from 0 up
+                0: {
+                    items: 4,
+                },
+                // breakpoint from 480 up
+                480: {
+                    items: 4,
+                },
+                // breakpoint from 768 up
+                768: {
+                    items: 4,
+                },
+                // breakpoint from 768 up
+                1170: {
+                    items: 4,
+                }
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
